@@ -1,7 +1,7 @@
 package campaign
 
 import (
-	"os/user"
+	"crowdfunding-golang/user"
 	"time"
 )
 
