@@ -104,7 +104,7 @@ func (s *service) SaveCampaignImage(input CreateCampaignImageInput, fileLocation
 	}
 
 	isPrimary := 0
-	if input.IsPrimary != nil && *input.IsPrimary {
+	if input.IsPrimary {
 		isPrimary = 1
 
 		_, err := s.repository.MarkAllImagesAsNonPrimary(input.CampaignID)
